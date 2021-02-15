@@ -54,7 +54,7 @@ body {
     font-weight:700;
     font-size:3.75rem;
     position:relative;
-    top:-5rem;
+    top:-10%;
 }
 
 .introduction .point {
@@ -144,7 +144,7 @@ body {
 }
 
 .interest p:last-child{
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     margin-top: 1rem;
     line-height:1.5;
     color:gray;
