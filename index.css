@@ -137,10 +137,11 @@ body {
 
 .interest{
     position:relative;
-    top:-13rem;
+    top:-10%;
     max-width:50rem;
     line-height:2.5;
     font-family: 'Montserrat', sans-serif;
+    padding-bottom:2rem;
 }
 
 .interest p:last-child{
