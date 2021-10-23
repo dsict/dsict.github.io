@@ -13,3 +13,7 @@ I'm based on Seoul, Korea🇰🇷.
 - Making a global produc🚀 used by many people around the world
 - Having great times and making good memories with my people💝
 - Losing my weight(Probably I've been saying this for over 20🤦‍♀️ years)
+
+## d'sict
+- My personal brand name
+- Compound word: des~~ign~~ + ~~add~~ict
