@@ -10,7 +10,7 @@ I'm based on Seoul, Korea🇰🇷.
 
 ## What I'm focusing on
 - Trying to grow and learn something to be a senior designer🤩 or a leader
-- Making a global produc🚀 used by many people around the world
+- Making a global product🚀 used by many people around the world
 - Having great times and making good memories with my people💝
 - Losing my weight(Probably I've been saying this for over 20🤦‍♀️ years)
 
