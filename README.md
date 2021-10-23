@@ -4,8 +4,8 @@ I've been working as a digital product designer for over 9️⃣ years.
 I'm based on Seoul, Korea🇰🇷.
 
 ## What I'm doing as a designer
-- Designing [SpaceONE](https://github.com/spaceone-dev, "SpaceONE repositories") which is a multi & hybrid cloud management platform(CMP)
-- Designing 🧩 [SpaceONE Design System](https://github.com/spaceone-dev/spaceone-design-system, "SpaceONE Design System repository")
+- Designing [SpaceONE](https://github.com/spaceone-dev) which is a multi & hybrid cloud management platform(CMP)
+- Designing 🧩 [SpaceONE Design System](https://github.com/spaceone-dev/spaceone-design-system)
 - Building SpaceONE brand�📚
 
 ## What I'm focusing on
