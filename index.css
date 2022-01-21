@@ -1,14 +1,144 @@
 *{
     box-sizing: border-box;
+    transition: all ease 1s 0s;
+}
+
+::selection{
+    background: #FFCE31;
+    color: #0035D1;
 }
 
 body {
-    background-color: #DCEF58;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #0035D1;
+    background-image: url('./images/cover-bg-img.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0; padding:0;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight:400;
+    text-align: center;
+    line-height: 90%;
+    color: #FFFFFF;
+    
 }
- 
-@media screen and (min-width: 1920px) {
+
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.875rem #0035D1 solid;
+}
+
+.main-text{
+    font-size:13vw;
+    letter-spacing: -0.03em;
+    opacity:0.5;
+}
+
+.water{
+    position: absolute;
+    width:100%; height:100%;
+    background-image: url('https://images.unsplash.com/photo-1528481711262-175bb7079126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.4;
+}
+
+h1{   
+    position: absolute;
+   width:100%;
+   text-align: center;
+    top: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+    z-index: 10;
+}
+
+.questrial{
+    position: absolute;
+    font-family: 'Questrial', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    opacity:0.5;
+    text-align: left;
+    letter-spacing: 0.08em;
+}
+
+.page-description{
+    left: 3.5rem;
+    top: 3rem;
+}
+
+.copyright{
+    left: 3.5rem;
+    bottom: 3rem;
+}
+
+.thinking{
+    position: absolute;
+    left: calc(50% - 149px/2 + 0.5px);
+    bottom: 3rem;
+    font-size: 1.5rem;
+    margin:0;
+
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    right: 3.5rem;
+    bottom: 3rem;
+
+    z-index: 10;
+}
+
+.social-media a{
+    opacity:0.5;
+}
+
+.social-media a:hover{
+    opacity:1;
+}
+
+.social-media img{
+    width:1.5rem; height:1.5rem;
+}
+
+.social-media img:last-child{
+    margin-top:1.25rem;
+}
+
+.menu{
+    position: absolute;
+    right: 3.5rem;
+    top: 3rem;
+    text-transform: uppercase;
+    text-align: right;
+    z-index: 10;
+    list-style:none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.785rem;
+    opacity: 1;
+}
+
+.menu li:first-child::before{
+    content: "";
+    background-image: url(./images/moon.png);
+    background-size: 0.625rem 0.625rem;
+    width:1rem;
+    height: 0.625rem;
+    display: inline-block;
+    background-repeat:no-repeat;
+}
+/* @media screen and (min-width: 1920px) {
     html{
         font-size:20px;
     }
@@ -27,151 +157,5 @@ body {
     .interest{
         font-size:14px;
     }
- }
+ } */
 
-::selection {
-    background: #4F46E5;
-    color: #DCEF58;
-}
-
-.page-title {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-}
-.page-title::before {
-    content:" ";
-    background-image: url('./images/desict.jpeg');
-    width:2rem; height:2rem;
-    background-size:2rem 2rem;
-    display:inline-block;
-    border-radius:100%;
-    margin-bottom:0.5rem;
-}
-
-.introduction p {
-    font-family: 'Inknut Antiqua', serif;
-    z-index: 10;
-    font-weight:700;
-    font-size:3.75rem;
-    position:relative;
-    top:-10%;
-}
-
-.introduction .point {
-    color: #0D51FF;
-    position:relative;
-    text-decoration: underline;
-}
-
-
-.introduction p span{
-    position:relative;
-}
-
-.cover .bigcircle {
-    width: 160rem;
-    height: 160rem;
-    background-color: #EBFD65;
-    left: -50rem;
-    top: -12rem;
-    z-index: -10;
-}
-
-.hello{
-    width:6rem;
-    height: 6.25rem;
-    position:absolute;
-    top: -1.5rem; left:2.2rem;
-    animation-name: wave-animation;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;  
-    transform-origin: 70% 70%;
-}
-
-@keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-    10% { transform: rotate(24.0deg) }
-    20% { transform: rotate(-8.0deg) }
-    30% { transform: rotate(23.0deg) }
-    40% { transform: rotate(-4.0deg) }
-    50% { transform: rotate(10.0deg) }
-    60% { transform: rotate( 0.0deg) } 
-   100% { transform: rotate( 0.0deg) }
-  }
-
-.designer{
-    background:url('./images/designer.png');
-    background-size:1.925rem 1.8rem;
-    background-repeat: no-repeat;
-    background-position:7.2rem 2rem;
-}
-
-.impact{
-    width: 6.25rem;
-    height:6rem;
-    position:absolute;
-    top: 6.55rem; left:13.5rem;
-    animation-name: drawing;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;  
-    transform-origin: 70% 70%;
-}
-
-@keyframes drawing {
-    0% { transform: translate(0rem)  }
-    50%  { transform: translate(-3rem) rotate(-3deg) }
-    0% { transform: translate(0rem)}
-  }
-  
-
-
-.smallcircle {
-    position: absolute;
-    background-color: #E3F65E;
-    border-radius: 100%;
-    bottom: 10%;
-    left:-2rem;
-    width: 22rem;
-    height: 22rem;
-}
-
-.interest{
-    position:relative;
-    top:-10%;
-    max-width:50rem;
-    line-height:2.5;
-    font-family: 'Montserrat', sans-serif;
-    padding-bottom:2rem;
-}
-
-.interest p:last-child{
-    font-size: 0.8rem;
-    margin-top: 1rem;
-    line-height:1.5;
-    color:gray;
-}
-
-.interest a{
-    text-decoration: underline;
-    cursor:pointer;
-    color: #4F46E5;
-}
-
-.interest h2{
-    font-weight:700;
-    margin-bottom:0.5em;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.interest p span{
-    padding:0.5em;
-    border-radius: 0.375em;
-    background-color:rgba(255,255,255,0.3);
-    border:12 solid rgba(0,0,0,0.08);
-    display:inline-block;
-    line-height:1;
-}
-
-.interest p span:hover{
-    background-color:rgba(255,255,255,0.6);
-}
