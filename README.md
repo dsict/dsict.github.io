@@ -1,19 +1,18 @@
-## Hi there👋, I’m Jenny.
-I work⚙️ at Megazone Cloud Inc as a product designer.  
-I've been working as a digital product designer for over 9️⃣ years.  
+## Hi there, I’m Jenny.
+I work⚙️ at Megazone Cloud Inc. as a product designer.  
+I've been working as a digital product designer for over 10 years.  
 I'm based on Seoul, Korea🇰🇷.
 
 ## What I'm doing as a designer
-- Designing [SpaceONE](https://github.com/spaceone-dev) which is a multi & hybrid cloud management platform(CMP)
-- Designing 🧩 [SpaceONE Design System](https://github.com/spaceone-dev/spaceone-design-system)
-- Building SpaceONE brand�📚
+- Designing [Cloudforet](https://github.com/cloudforet-io) which is an open source multi-cloud management platform(CMP) and its SaaS version [SpaceONE](https://spaceone.megazone.io)
+- Designing [Mirinae Design System](https://github.com/cloudforet-io/mirinae)
+- Building Cloudforet & SpaceONE' brand
 
 ## What I'm focusing on
-- Trying to grow and learn something to be a senior designer🤩 or a leader
-- Making a global product🚀 used by many people around the world
-- Having great times and making good memories with my people💝
-- Losing my weight(Probably I've been saying this for over 20🤦‍♀️ years)
+- Trying to grow and learn something to be a senior designer and a leader
+- Making a global product used by many people around the world
+- Having great times and making good memories with my people
 
-## d'sict
+## dsict
 - My personal brand name
-- Compound word: des~~ign~~ + ~~add~~ict
+- des~~ign~~ + ~~add~~ict
