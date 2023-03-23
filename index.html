@@ -17,7 +17,7 @@
     <!-- basic favicon -->
     <link rel="shortcut icon" href="./images/desict.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/cover.css">
+    <!-- <link rel="stylesheet" href="./css/cover.css"> -->
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -27,7 +27,6 @@
     })(window,document,'script','dataLayer','GTM-TJTJKPC');</script>
     <!-- End Google Tag Manager -->
     
-    <script src="./js/water-effect2.js">
     </script>
 </head>
 
@@ -51,7 +50,23 @@
     </ul>
 
     <section class="container">
-        <div class="water"></div>
+        <!-- <div class="water"></div> -->
+        <svg id="simpleWaterEffectSvg">
+          <defs>
+            <filter id="disFilter">
+              <feTurbulence type="turbulence" baseFrequency="0.01" numOctaves="3" seed="1" result="turbulence">
+                <animate attributeName="baseFrequency" values="0.01;0.005;0.01;" dur="30s" begin="0"
+                  repeatCount="indefinite" />
+              </feTurbulence>
+              <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="30" xChannelSelector="R" yChannelSelector="B"
+                result="displacement" />
+            </filter>
+          </defs>
+          <g id="background">
+            <image xlink:href="https://images.unsplash.com/photo-1528481711262-175bb7079126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80" x="0" y="0"
+              height="100%" width="100%" preserveAspectRatio="xMidYMid slice" />
+          </g>
+        </svg>
         <p class="title">unconscious</p>
         <p class="subtitle">My only limit is my mind.</p>
     </section>
@@ -63,7 +78,7 @@
 
 <!-- happy to update -->
 
-<script id="vertex-shader" type="x-shader/x-vertex">
+<!-- <script id="vertex-shader" type="x-shader/x-vertex">
   varying vec2 vUv;
   
   void main(){  
@@ -99,4 +114,4 @@
     vec4 rgba = texture2D(texture1, uv1);
     gl_FragColor = rgba;
   }
-</script>
+</script> -->
