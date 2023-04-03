@@ -4,7 +4,6 @@
 }
 
 ::selection {
-    background: #FFCE31;
     color: #0035D1;
 }
 
@@ -18,7 +17,6 @@ body {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 300;
     text-align: center;
-    line-height: 90%;
     color: #FFFFFF;
 }
 
@@ -26,14 +24,13 @@ h1 {
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 2.5rem;
+    top: 1.5rem;
     font-size: 2rem;
     text-align: center;
     font-weight: 300;
-    z-index: 10;
 }
 
-.questrial {
+.side-text {
     position: absolute;
     font-family: 'Questrial', sans-serif;
     font-style: normal;
@@ -55,17 +52,19 @@ h1 {
 }
 
 .container {
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .title {
-    font-size: 13vw;
-    z-index: 10;
+    font-size: 9vw;
     position: relative;
-    top: -4%;
+    top: -2%;
+    opacity:0.8;
+    line-height: 0.85;
+    letter-spacing:-0.2vw;
 }
 
 .subtitle {
@@ -147,4 +146,11 @@ h1 {
     .noshow-on-mobile {
         display: none;
     }
+}
+
+.background-image-water {
+    background-position: center;
+    background-size: cover;
+    opacity: 0.35; 
+    filter: url("#disFilter");
 }
