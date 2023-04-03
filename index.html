@@ -32,86 +32,51 @@
 
 <body>
     <h1>d.sict</h1>
-    <div class="questrial noshow-on-mobile copyright">Copyright © 2022 d.sict</div>
-    <div class="questrial noshow-on-mobile page-description">
+    <div class="side-text noshow-on-mobile copyright">Copyright © 2022 d.sict</div>
+    <div class="side-text noshow-on-mobile page-description">
         <p>d.sict, a product designer.</p>
 <!--         <p>This website is currently under construction.</p> -->
     </div>
 
     <div class="noshow-on-mobile social-media">
-        <a href="https://github.com/dsict" target="_blank"><img src="./images/github.png" alt="github"></a>
-        <a href="https://www.linkedin.com/in/jenny-kim-499984167/" target="_blank"><img src="./images/linkedin.png" alt="github"></a>
+        <a href="https://github.com/dsict" target="_blank"><img src="https://dsict.github.io/images/github.png" alt="github"></a>
+        <a href="https://www.linkedin.com/in/jenny-kim-499984167/" target="_blank"><img src="https://dsict.github.io/images/linkedin.png" alt="linkedin"></a>
     </div>
-
-    <ul class="questrial noshow-on-mobile menu">
-        <li>beyond limit</li>
+  
+    <ul class="side-text noshow-on-mobile menu">
+<!--         <li>beyond limit</li> -->
         <!-- <li>lucid universe</li>
         <li>my bedrock</li> -->
     </ul>
 
     <section class="container">
-        <!-- <div class="water"></div> -->
-<!--         <svg id="simpleWaterEffectSvg">
-          <defs>
-            <filter id="disFilter">
-              <feTurbulence type="turbulence" baseFrequency="0.01" numOctaves="3" seed="1" result="turbulence">
-                <animate attributeName="baseFrequency" values="0.01;0.005;0.01;" dur="30s" begin="0"
-                  repeatCount="indefinite" />
-              </feTurbulence>
-              <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="30" xChannelSelector="R" yChannelSelector="B"
-                result="displacement" />
-            </filter>
-          </defs>
-          <g id="background">
-            <image xlink:href="https://images.unsplash.com/photo-1528481711262-175bb7079126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80" x="0" y="0"
-              height="100%" width="100%" preserveAspectRatio="xMidYMid slice" />
-          </g>
-        </svg> -->
-        <p class="title">unconscious</p>
-        <p class="subtitle">My only limit is my mind.</p>
+      
+      <p class="title">Beyond my limits</p>
+      
+      <!--svg water effect-->
+          <svg id="svg">
+  <defs>
+    <filter id="disFilter">
+      <feTurbulence type="turbulence" baseFrequency="0.01" numOctaves="3" seed="1" result="turbulence">
+        <animate attributeName="baseFrequency" values="0.01;0.005;0.01;" dur="30s" begin="0"
+          repeatCount="indefinite" />
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="30" xChannelSelector="R" yChannelSelector="B"
+        result="displacement" />
+    </filter>
+  </defs>
+  <g class="background-image-water">
+    <image xlink:href="https://klevron.github.io/codepen/misc/water-texture.jpg"  x="-5%" y="-5%"
+      height="110%" width="110%" preserveAspectRatio="xMidYMid slice"/>
+  </g>
+</svg>
+      <!-- end of water effect-->
+        
+<!--         <p class="subtitle">Explore my subconscious</p> -->
+<!--       My only limit is my mind. -->
     </section>
 
 
 </body>
 
 </html>
-
-<!-- happy to update -->
-
-<!-- <script id="vertex-shader" type="x-shader/x-vertex">
-  varying vec2 vUv;
-  
-  void main(){  
-    vUv = uv; 
-    //modelViewMatrix: es la posición y orientación de la cámara dentro de la escena
-    //projectionMatrix: la proyección para la escena de la cámara incluyendo el campo de visión
-    vec4 modelViewPosition = modelViewMatrix * vec4(position, 1.0);
-    gl_Position = projectionMatrix * modelViewPosition;
-  }
-</script>
-
-<script id="fragment-shader" type="x-shader/x-fragment">
-  uniform float time;
-  uniform vec2 resolution;
-  uniform sampler2D texture1;
-  
-  varying vec2 vUv;
-  
-  void main() {  
-    vec2 uv1 = vUv;
-    // variable que contiene el eje de coordenadas
-    vec2 uv = gl_FragCoord.xy/resolution.xy;
-    
-    float frequency = 15.;
-    float amplitude = 0.015;
-    
-    float x = uv1.y * frequency + time * .7; 
-    float y = uv1.x * frequency + time * .3;
-    
-    uv1.x += cos(x+y) * amplitude * cos(y);
-    uv1.y += sin(x-y) * amplitude * cos(y);
-
-    vec4 rgba = texture2D(texture1, uv1);
-    gl_FragColor = rgba;
-  }
-</script> -->
